@@ -33,16 +33,25 @@
   -webkit-backdrop-filter: blur(10px); /* For Safari */
 }
 
+.dot{
+
+}
+.background-active{
+  color: #ea5439;
+  background-color: #343333;
+}
+
 .hover-animation {
   position: relative;
   text-decoration: none;
 }
 
 .hover-animation:hover::after {
-  background-color: #58525272;
+  background-color: #5852521f;
   width: 100%;
 }
 
 .hover-animation:hover {
-  background-color: #343333;
+  background-color: #5852521f;
+  cursor: pointer;
 }
