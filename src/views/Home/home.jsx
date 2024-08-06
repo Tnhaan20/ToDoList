@@ -4,12 +4,22 @@ export default function home() {
     const currentDate = new Date();
     const options = { weekday: 'short', day: 'numeric', month: 'long' };
     const formattedDate = currentDate.toLocaleDateString('en-US', options).toUpperCase();
+    
+    const greeting = () => {
+        const hour = new Date().getHours();
+        if(hour > 6 && hour <12) return 'Good morning'
+        else if(hour > 12 && hour < 18) return 'Good Afternoon'
+        else return 'Good evening'
+    }
+
+    
+
   return (
     <>
         {/* Home Page */}
     <div className="pl-[31rem] h-full flex flex-col justify-center items-center text-white p-4">
-    <div className="absolute top-2 py-8">
-      <h1 className="text-4xl font-bold mb-2">Good Evening, Nhân.</h1>
+    <div className="absolute top-2 pt-5">
+      <h1 className="text-4xl font-bold mb-2">{greeting()}, Nhân.</h1>
       <h2 className="text-2xl text-gray-300">Remove doubts with action</h2>
     </div>
     
