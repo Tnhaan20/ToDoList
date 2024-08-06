@@ -31,11 +31,21 @@ export default function home() {
       </div>
       <div className="text-center sm:text-left">
         <h3 className="text-xl mb-2">Sync your time with our to do</h3>
-        <div className="flex flex-col sm:flex-row space-y-2 sm:space-y-0 sm:space-x-2">
-          <span className="hover-underline-animation">Connect Google Calendar</span>
-          <span className="hover-underline-animation">Connect Outlook Calendar</span>
+        <div className="flex flex-col space-y-2">
+            <div className="relative cursor-pointer  group inline-flex items-center">
+            <img className="w-10 h-10" src="https://fonts.gstatic.com/s/i/productlogos/calendar_2020q4/v13/192px.svg" alt="" />
+            <span className="ml-2 w-0 font-bold text-lg hover-underline-animation overflow-hidden whitespace-nowrap group-hover:w-64 transition-all duration-300 ease-in-out">
+                Connect Google Calendar
+            </span>
+            </div>
+            <div className="relative group cursor-pointer inline-flex items-center">
+            <img className="w-10 h-10" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRaP23uZPuHw9bcX1H0n8FxTD_EU3O3rRNhYg&s" alt="" />
+            <span className="ml-2 w-0 font-bold text-lg hover-underline-animation overflow-hidden whitespace-nowrap group-hover:w-64 transition-all duration-300 ease-in-out">
+                Connect Outlook Calendar
+            </span>
+            </div>
         </div>
-      </div>
+        </div>
     </div>
 
     <div className="absolute bottom-2 py-2 w-full max-w-xl">

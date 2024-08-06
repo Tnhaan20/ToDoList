@@ -44,7 +44,8 @@
 }
 
 .hover-underline-animation:hover {
-  color: #7882da;
+  
+  color: #FFDA76;
   cursor: pointer;
 }
 
