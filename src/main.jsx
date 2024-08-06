@@ -19,7 +19,6 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         <Route path='alltask' element={<AllTasks/>}/>
         <Route path='flag' element={<Flagged/>}/>
         <Route path='completed' element={<Complete/>}/>
-
       </Routes>
     </BrowserRouter>
   </React.StrictMode>,

@@ -17,6 +17,38 @@
   font-style: normal;
 }
 
+
+.hover-underline-animation {
+  position: relative;
+  text-decoration: none;
+  color: rgba(36, 36, 36, 0.874);
+}
+
+.hover-underline-animation::after {
+  color: var(--secondary);
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  display: block;
+  margin: 0 auto;
+  transition: width 0.4s ease-in-out;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -2px;
+}
+
+.hover-underline-animation:hover::after {
+  color: #ea5439;
+  width: 100%;
+}
+
+.hover-underline-animation:hover {
+  color: #7882da;
+  cursor: pointer;
+}
+
+
 .bg-img{
   background-image: url('./assets/clou1.jpg');
   display: flex;
