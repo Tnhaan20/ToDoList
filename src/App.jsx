@@ -1,35 +1,21 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-
-function App() {
-  const [count, setCount] = useState(0)
-
+import React from 'react'
+import { Router } from 'react-router-dom'
+import SideBar, { SideBarItem } from './components/SideBar/SideBar'
+import {} from "lucide-react"
+export default function App() {
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+    <section className="bg-img">
+      <SideBar>
+        <SideBarItem icon={<i class="fa fa-bullseye" aria-hidden="true"></i>} text='My day' number={2}></SideBarItem>
+        <SideBarItem icon={<i class="fa fa-star" aria-hidden="true"></i>} text='Important' number={4}></SideBarItem>
+        <SideBarItem icon={<i class="fa fa-tasks" aria-hidden="true"></i>} text='All task' number={3}></SideBarItem>
+        <hr className="my-3" />
+        <SideBarItem icon={<i class="fa fa-home" aria-hidden="true"></i>} text='Home' number={4}></SideBarItem>
+        <SideBarItem icon={<i class="fa fa-tasks" aria-hidden="true"></i>} text='All task' number={3}></SideBarItem>
+      </SideBar>
+    </section>
     </>
   )
 }
 
-export default App
