@@ -27,9 +27,8 @@
 .background{
   box-shadow: rgba(153, 153, 153, 0.685) 0px 1px 1px,
   rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
-
-  background-color: rgba(20, 20, 20, 0.836);
-  backdrop-filter: blur(10px); /* Apply a blur effect to the background */
+  background-color: rgba(17, 15, 15, 0.4);
+  backdrop-filter: blur(30px); /* Apply a blur effect to the background */
   -webkit-backdrop-filter: blur(10px); /* For Safari */
 }
 
@@ -47,11 +46,11 @@
 }
 
 .hover-animation:hover::after {
-  background-color: #5852521f;
+  background-color: #0d0c0c4c;
   width: 100%;
 }
 
 .hover-animation:hover {
-  background-color: #5852521f;
+  background-color: #1e1c1cb0;
   cursor: pointer;
 }
