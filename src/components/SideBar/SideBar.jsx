@@ -6,7 +6,7 @@ const SidebarContext = createContext()
 
 export default function SideBar({children}) {
   const [expanded, setExpanded] = useState(true)
-  
+ 
   return (
     <aside className="h-screen">
       <nav className={`background h-full ${expanded ? "w-72" : "w-16"} flex flex-col border-gray-400 border-r shadow-sm transition-all duration-300 ease-in-out`}>
@@ -23,7 +23,7 @@ export default function SideBar({children}) {
         <div className="p-4 pb-2 flex justify-between items-center">
           <span className={`text-xl transition-all duration-300 ease-in-out ${expanded ? "opacity-100" : "opacity-0 w-0"}`}>To do Web App</span>
           <button onClick={() => setExpanded((curr) => !curr)} className="p-1 rounded-lg hover-animation">
-            <ChevronFirst className={`h-5 w-5 transition-transform duration-300 ${expanded ? "rotate-0" : "rotate-180"}`}/>
+            <ChevronFirst className={`h-5 w-5 transition-transform duration-300 ${expanded ? "rotate-0" : " rotate-180"}`}/>
           </button>
         </div>
         
@@ -37,9 +37,11 @@ export default function SideBar({children}) {
             <span className={`ml-3 transition-all duration-300 ease-in-out ${expanded ? "opacity-100" : "opacity-0 w-0"}`}>New list</span>
           </button>
         </div>
-
       </nav>
+
     </aside>
+
+    
    )
 }
 export function SideBarItem({icon, text, number, active}){
